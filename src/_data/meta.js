@@ -1,17 +1,17 @@
 module.exports = {
   url: process.env.URL || 'http://localhost:8080',
-  siteName: 'Eleventy Excellent',
+  siteName: 'Trash Panda Productions',
   siteDescription:
-    'Eleventy starter based on the workflow suggested by buildexcellentwebsit.es.',
-  siteType: 'Person', // schema
-  locale: 'en_EN',
+    'We book anti-racist, anti-fascist, punk rock bands in and around Reno and Sparks, NV',
+  siteType: 'Organization', // schema
+  locale: 'en_US',
   lang: 'en',
   skipContent: 'Skip to content',
-  author: 'Lene Saile', // i.e. Lene Saile - author's name. Must be set.
+  author: 'Trash Panda Booking', // i.e. Lene Saile - author's name. Must be set.
   authorEmail: '', // i.e. hola@lenesaile.com - email of the author
   authorWebsite: '', // i.e. https.://www.lenesaile.com - the personal site of the author
-  themeColor: '#DD4462', //  Manifest: defines the default theme color for the application
-  themeBgColor: '#F3F3F3', // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
+  themeColor: '#e6aa68', //  Manifest: defines the default theme color for the application
+  themeBgColor: '#02020b', // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
   meta_data: {
     opengraph_default: '/assets/images/opengraph-default.jpg',
     twitterSite: '', // i.e. @site - twitter profile of the site
@@ -20,9 +20,8 @@ module.exports = {
   },
   blog: {
     // this is for the rss feed
-    name: 'My great Web Development Blog',
-    description:
-      'Tell the word what you are writing about in your blog! It will show up on feed readers.'
+    name: 'Upcoming Events',
+    description: 'Information for upcoming events booked by Trash Panda'
   },
   pagination: {
     itemsPerPage: 20

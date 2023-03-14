@@ -2,13 +2,18 @@
 layout: base
 ---
 
-<header class="section spot-color-primary">
+<header class="section | spot-color-dark">
   <div class="section__inner">
     <div class="wrapper flow region">
-      <h1 class="text-center">{{ title }}</h1>
+      <h1 class="font-black">
+        We book <span class="text-primary-glare">anti-racist</span> and
+        <span class="text-secondary-glare">anti-fascist</span> punk rock bands in and
+        around Reno, NV, and sometimes beyond.
+      </h1>
     </div>
   </div>
-  {% include 'svg/divider-waves.svg' %}
+  <!-- <div class="divider"></div> -->
+  {% include "svg/divider-edgy.svg" %}
 </header>
 
 <article class="region">
@@ -28,16 +33,25 @@ layout: base
   <!-- TODO: duplicate of partials/blog.njk -->
 
   <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections.posts %} {% for post in postslist.slice(0, 4) %}
+    {% set eventslist = collections.events %} {% for event in eventslist.slice(0, 2) %}
+    <!--  -->
+    {% include "partials/blog-card.njk" %}
+    <!--  -->
 
-    <li class="card flow overflow-hidden">
+    <!-- <li class="card flow overflow-hidden">
       <h3>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+        <a href="{{ event.url | url }}">{{ event.data.title }}</a>
       </h3>
-      {% set definedDate = post.date %} {% include "partials/date.njk" %}
-      <p>{{ post.data.description }}</p>
+      <span class="text-primary-glare"
+        >{% set definedDate = event.date %} {% include "partials/date.njk" %}</span
+      >
+      <p>{{ event.data.description }}</p>
+      {% if event.data.tickets %}<a class="button block" href="{{ event.data.tickets }}"
+        >Tickets</a
+      >{% endif %}
     </li>
-
+ -->
     {% endfor %}
   </ul>
+  <a class="button block mx-auto" href="/events/">View All Events</a>
 </article>

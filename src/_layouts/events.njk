@@ -1,0 +1,23 @@
+---
+layout: base
+---
+
+<header class="section spot-color-light">
+  <div class="section__inner region">
+    <div class="wrapper flow">
+      <section class="prose text-center">
+        <h1 class="fade-in mx-auto text-dark-gray">{{ title }}</h1>
+      </section>
+    </div>
+  </div>
+</header>
+
+<article class="wrapper">
+  <ul class="grid" role="list" data-rows="masonry" data-layout="50-50">
+    {% set eventslist = collections.events %} {% for event in eventslist %}
+    <!--  -->
+    {% include "partials/blog-card.njk" %}
+    <!--  -->
+    {% endfor %}
+  </ul>
+</article>

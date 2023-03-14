@@ -31,7 +31,7 @@ nav.navbar {
 
 /* Remove default list styling and create layout for list */
 nav.navbar ul {
-  background: var(--nav-list-background, var(--color-light));
+  background: var(--nav-list-background, var(--color-dark));
   box-shadow: var(--nav-list-shadow, -5px 0 11px 0 rgb(0 0 0 / 0.2));
   display: flex;
   flex-direction: var(--nav-list-layout, column);
@@ -64,7 +64,7 @@ nav.navbar [aria-expanded='false'] + ul {
 
 /* Basic link styling */
 nav.navbar a {
-  --text-color: var(--color-dark);
+  --text-color: var(--color-light);
   border-block-end: 3px solid var(--border-color, transparent);
   color: var(--text-color);
   padding: 0.1rem;
@@ -78,8 +78,8 @@ nav.navbar a:where(:hover, :focus) {
 
 /* Change border-color and color for the active page */
 nav.navbar [aria-current='page'] {
-  --border-color: var(--color-primary);
-  --text-color: var(--color-primary);
+  --border-color: var(--color-primary-glare);
+  --text-color: var(--color-primary-glare);
 }
 
 /* Reset button styling */
@@ -91,7 +91,7 @@ nav.navbar button {
   z-index: 2;
   cursor: pointer;
   align-items: center;
-  padding: var(--space-xs) 0;
+  padding: var(--space-xs);
 }
 
 nav.navbar span {
@@ -110,5 +110,5 @@ header svg {
 }
 
 nav.navbar [aria-expanded='true'] svg {
-  transform: var(--nav-list-rotate, rotate(45deg));
+  transform: rotate(90deg);
 }

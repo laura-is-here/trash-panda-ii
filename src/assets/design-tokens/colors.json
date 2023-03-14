@@ -4,11 +4,15 @@
   "items": [
     {
       "name": "Dark",
-      "value": "#404040"
+      "value": "#02020b"
+    },
+    {
+      "name": "Dark Gray",
+      "value": "#262626"
     },
     {
       "name": "Light",
-      "value": "#F3F3F3"
+      "value": "#e5e5e5"
     },
     {
       "name": "Light Glare",
@@ -16,19 +20,19 @@
     },
     {
       "name": "Primary",
-      "value": "#dd4462"
+      "value": "hsl(17, 74%, 40%)"
     },
     {
       "name": "Primary Glare",
-      "value": "#F4D0DF"
+      "value": "#e6aa68"
     },
     {
       "name": "Secondary",
-      "value": "#0369A1"
+      "value": "hsl(101, 41%, 45%)"
     },
     {
       "name": "Secondary Glare",
-      "value": "#D8E2F4"
+      "value": "#7fb069"
     }
   ]
 }

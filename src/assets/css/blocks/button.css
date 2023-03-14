@@ -1,1 +1,8 @@
 /* A blank block because there is *always* a button */
+.button {
+  background-color: var(--color-primary-glare);
+  color: var(--color-dark);
+  max-width: fit-content;
+  padding: var(--space-xs);
+  text-decoration: none;
+}

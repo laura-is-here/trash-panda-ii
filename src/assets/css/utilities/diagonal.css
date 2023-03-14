@@ -1,0 +1,17 @@
+.divider {
+  transform: rotate(-6deg) translateY(8rem);
+  margin-inline: -4rem;
+  position: relative;
+  padding: 4rem;
+  height: 16rem;
+  grid-column: span 7 / span 7;
+  overflow: hidden;
+  background-color: var(--spot-color);
+}
+
+@media (max-width: 760px) {
+  .divider {
+    transform: rotate(-6deg) translateY(4rem);
+    height: 8rem;
+  }
+}

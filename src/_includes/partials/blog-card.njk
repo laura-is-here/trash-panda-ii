@@ -1,0 +1,12 @@
+<li class="card flow overflow-hidden">
+  <h3>
+    <a href="{{ event.url | url }}">{{ event.data.title }}</a>
+  </h3>
+  <span class="text-primary-glare"
+    >{% set definedDate = event.date %} {% include "partials/date.njk" %}</span
+  >
+  <p>{{ event.data.description }}</p>
+  {% if event.data.tickets %}<a class="button block" href="{{ event.data.tickets }}"
+    >Tickets</a
+  >{% endif %}
+</li>
