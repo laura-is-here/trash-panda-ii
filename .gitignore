@@ -15,3 +15,17 @@ src/_includes/scripts
 
 # Local Netlify folder
 .netlify
+
+
+
+
+config/.DS_Store
+scr/_data/.DS_Store
+src/_includes/.DS_Store
+src/_includes/icons/.DS_Store
+src/_includes/partials/.DS_Store
+src/_includes/schemas/.DS_Store
+src/_includes/svg/.DS_Store
+src/_layouts/.DS_Store
+.DS_Store
+package-lock.json
