@@ -22,6 +22,7 @@ layout: base
 
 <article class="region" style="--region-space-top: var(--space-s)">
   <div class="wrapper flow prose">
+    {% if !collections.events %}
     <h2>{{ blog.title }}</h2>
     <!-- blog intro text is optional. -->
     {% if blog.intro %}
@@ -31,7 +32,6 @@ layout: base
   <!-- TODO: duplicate of partials/blog.njk -->
 
   <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-  	{% if collections.events %}
     {% set eventslist = collections.events %} {% for event in eventslist.slice(0, 2) %}
     <!--  -->
     {% include "partials/blog-card.njk" %}
@@ -53,5 +53,9 @@ layout: base
     {% endfor %}
   </ul>
   <a class="button block mx-auto" href="/events/">View All Events</a>
+  {% else %}
+  <div class="wrapper flow prose">
+  <p>There are currently no upcoming events</p>
+  </div>
   {% endif %}
 </article>
