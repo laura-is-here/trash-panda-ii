@@ -1,11 +1,14 @@
 ---
 permalink: /index.html
-title: 'Trash Panda Booking'
-description: 'We book anti-racist, anti-fascist, punk rock bands in and around Reno and Sparks, NV.'
-layout: 'home'
+title: "Trash Panda Booking"
+description: "Booking anti-racist, anti-fascist punk rock bands in and around Reno, NV."
+layout: '="home"
 blog:
-  title: 'Upcoming Events'
-  intro: "I'm showing 2 upcoming events, but there might be more!"
+  title: "Upcoming Events"
+  intro: "Here are some of Trash Panda's upcoming events"
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis possimus ullam amet dignissimos fugit earum sapiente tempora deleniti dolorum non mollitia quia, excepturi asperiores, aspernatur nobis quidem consequuntur praesentium neque!
+This project, founded by activists, has all but one simple goal: To bring anti-racist and anti-facist punk rock
+to the Reno area.
+
+<img src="assets/images/banner.jpg" />
