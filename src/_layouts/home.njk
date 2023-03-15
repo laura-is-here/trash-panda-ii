@@ -27,6 +27,7 @@ layout: base
     <!-- blog intro text is optional. -->
     {% if blog.intro %}
     <p>{{ blog.intro }}</p>
+    {% endif %}
   </div>
   <!-- TODO: duplicate of partials/blog.njk -->
 
@@ -52,9 +53,6 @@ layout: base
     {% endfor %}
   </ul>
   <a class="button block mx-auto" href="/events/">View All Events</a>
-  {% else %}
-  <div class="wrapper flow prose">
-  <p>There are currently no upcoming events</p>
-  </div>
+
   {% endif %}
 </article>
