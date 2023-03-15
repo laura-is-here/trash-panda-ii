@@ -2,7 +2,7 @@
 permalink: /index.html
 title: "Trash Panda Booking"
 description: "Booking anti-racist, anti-fascist punk rock bands in and around Reno, NV."
-layout: '="home"
+layout: "home"
 blog:
   title: "Upcoming Events"
   intro: "Here are some of Trash Panda's upcoming events"
