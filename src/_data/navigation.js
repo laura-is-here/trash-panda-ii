@@ -1,17 +1,18 @@
 module.exports = {
   top: [
     {
-      text: 'About',
-      url: '/about/'
-    },
-    {
       text: 'Events',
       url: '/events/'
+    },
+    {
+      text: 'Contact',
+      url: '/contact/'
     }
+
   ],
   bottom: [
     {
-      text: 'Privacy',
+      text: ':privacy:',
       url: '/privacy/'
     }
   ]
