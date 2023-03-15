@@ -31,7 +31,7 @@ layout: base
   <!-- TODO: duplicate of partials/blog.njk -->
 
   <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-  	{% if eventslist %}
+  	{% if collections.events %}
     {% set eventslist = collections.events %} {% for event in eventslist.slice(0, 2) %}
     <!--  -->
     {% include "partials/blog-card.njk" %}
