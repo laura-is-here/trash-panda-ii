@@ -8,6 +8,8 @@ blog:
   intro: "Here are some of Trash Panda's upcoming events"
 ---
 
+<strong>Please note</strong> Please bear with us. This site is currently under construction.
+
 Trash Panda is a project, founded by activists, that has one goal: To bring anti-racist and anti-fascist punk rock to the Reno area.
 
 We bring punk rock bands to various venues around, and strive to make most shows all-ages.

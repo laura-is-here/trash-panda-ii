@@ -1,12 +1,19 @@
 [
   {
     "platform": "mastodon",
-    "url": "https://front-end.social/@lene",
+    "url": "https://kolektiva.social/@trashpandabooking",
     "icon": "mastodon.svg"
   },
+  
   {
-    "platform": "rss",
-    "url": "/feed.xml",
-    "icon": "rss.svg"
+    "platform": "instagram",
+    "url": "https://www.instagram.com/trash.panda.booking/",
+    "icon": "instagram.svg"
+  },
+  
+  {
+    "platform": "facebook",
+    "url": "https://www.facebook.com/trashpandabooking",
+    "icon": "facebook.svg"
   }
 ]
