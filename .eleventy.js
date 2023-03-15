@@ -46,6 +46,7 @@ const {slugifyString} = require('./config/utils');
 const {escape} = require('lodash');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language');
+const SocialIcon = require('./_includes/modules/socialIcon.js');
 
 module.exports = eleventyConfig => {
   // 	--------------------- Custom Watch Targets -----------------------
@@ -105,6 +106,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.setLibrary('md', markdownLib);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(inclusiveLangPlugin);
+  eleventyConfig.addPairedShortcode('SocialIcon', SocialIcon);
 
   // 	--------------------- Passthrough File Copy -----------------------
   // same path
